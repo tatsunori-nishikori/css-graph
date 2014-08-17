@@ -1,0 +1,19 @@
+#tateG {
+  border: 1px solid #9ca8a8;/*table のボーダー*/
+}
+#tateG th {
+  color: maroon;
+}
+#tateG td {
+  font: 1.1em Verdana; /*フォントのサイズ 種類*/
+  width : 2.5em;
+  text-align: center;　/* テキストの水平方向の位置揃え 中央寄せ */
+  vertical-align: bottom;/* テキストの垂直方向の位置揃え 下揃え*/
+}
+.memori { /* 左側　目盛り */
+  padding-bottom : 28px; /* 下 余白 */
+  *padding-bottom : 29px;  /* IE6 7 */
+  font: 10px Verdana;
+  text-align: right;
+  border-right: solid 1px #000;
+}

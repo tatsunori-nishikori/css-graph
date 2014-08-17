@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>CSSで作る垂直棒グラフ-tableのborder利用</title>
+<style type="text/css">
+<!--
+#tateG {
+  border: 1px solid #9ca8a8;/*table のボーダー*/
+}
+#tateG th {
+  color: maroon;
+}
+#tateG td {
+  font: 1.1em Verdana; /*フォントのサイズ 種類*/
+  width : 2.5em;
+  text-align: center;　/* テキストの水平方向の位置揃え 中央寄せ */
+  vertical-align: bottom;/* テキストの垂直方向の位置揃え 下揃え*/
+}
+.memori { /* 左側　目盛り */
+  padding-bottom : 28px; /* 下 余白 */
+  *padding-bottom : 29px;  /* IE6 7 */
+  font: 10px Verdana;
+  text-align: right;
+  border-right: solid 1px #000;
+}
+/* グラフ部分　データセル(td)の下枠線: 線種(実線) 太さ 色; */
+#suu{ border-bottom: solid 132px lime; }
+#koku{ border-bottom: solid 200px red; }
+#rika{ border-bottom: solid 170px fuchsia; }
+#syaka{ border-bottom: solid 106px blue; }
+#eigo{ border-bottom: solid 64px purple; }
+#onn{ border-bottom: solid 154px gold; }
+-->
+</style>
+</head>
+<body>
+<table border="0" cellspacing="6" id="tateG">
+  <tr>
+    <td style="width : 1.7em;">
+      <div class="memori">100-</div>
+      <div class="memori">80-</div>
+      <div class="memori">60-</div>
+      <div class="memori">40-</div>
+      <div class="memori">20-</div>
+    </td>
+    <td id="suu">66</td>
+    <td id="koku">100</td>
+    <td id="rika">85</td>
+    <td id="syaka">53</td>
+    <td id="eigo">32</td>
+    <td id="onn">77</td>
+  </tr>
+  <tr>
+    <th></th>
+    <th>数学</th>
+    <th>国語</th>
+    <th>理科</th>
+    <th>社会</th>
+    <th>英語</th>
+    <th>音楽</th>
+  </tr>
+</table>
+</body>
+</html>
+
+

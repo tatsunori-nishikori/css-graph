@@ -1,16 +1,23 @@
 (function($){
+
+  $fn.Bar = function(data,label,option){
+    
+  };
+
   var Bar = function(){
     this.data = [];
     this.label = [];
     this.scale = [];
-    /* 最大 */
+    /** 最大 */
     this.max = 100;
-    /* 最小 */
+    /** 最小 */
     this.min = 0;
-    /* データの個数 */
+    /** データの個数 */
     this.count = 0;
-    /* 色 */
+    /** 色 */
     this.color = '';
+    /** 軸本数 */
+    this.scaleNum = 5;
   };
   /**
    * y軸目盛り 
